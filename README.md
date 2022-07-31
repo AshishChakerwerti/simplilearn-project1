@@ -1,28 +1,28 @@
 # simplilearn-project1
-Assesment SimliLearn
-Step 1: Chk Terraform
+- Assesment SimliLearn
+- Step 1: Chk Terraform
 
-Step 2: Go to AWS cloud and Create Access key and ID
+- Step 2: Go to AWS cloud and Create Access key and ID
 
-Step 3: Setup AWS profile
+- Step 3: Setup AWS profile
 
-aws s3 ls ```` 
-Step 4: Write the TF Script.
+- aws s3 ls ```` 
+- Step 4: Write the TF Script.
 
-Step 5: Chk on AWS console. VM is provisioned or not?
+- Step 5: Chk on AWS console. VM is provisioned or not?
 
-Creation of VM in AWS
-Security group
+- Creation of VM in AWS
+- Security group
 
-INBOUND RULES
+# INBOUND RULES
 
-OUTBOUND RULES
+- OUTBOUND RULES
 
-Key pair
+- Key pair
 
-VM AWS AMI ami-0cff7528ff583bf9a
+- VM AWS AMI ami-0cff7528ff583bf9a
 
-Jenkins installation via Terraform
+- Jenkins installation via Terraform
 
   # Type of connection to be established
   connection {
@@ -49,7 +49,7 @@ Jenkins installation via Terraform
   }
 
 
-Jenkins Console port 8080
+-  Jenkins Console port 8080
 http://3.89.81.9:8080
 ssh to you ubuntu vm
 ssh -i deployer ubuntu@2.3.4.5
@@ -60,7 +60,7 @@ apt install docker
 apt install docker.io
 docker run hello-world
 
-Github & Jenkis Integration Webhook
+- Github & Jenkis Integration Webhook
 Goto repo setting
 click on Webhook
 add your payload URL
@@ -73,7 +73,7 @@ Branch Specifier
 */main
 Goto Build Triggers and choose POLL SCM
 * * * * * 
-Execute shell Command
+- Execute shell Command
 docker run hello-world
 docker rm `docker ps -aq` -f
 docker build -t demo .
@@ -83,12 +83,12 @@ docker ps
 Output
 Hit the URL on port 80 you will see the website
 http://35.172.250.157/
-Common Error
+- Common Error
 /var/run/docker.sock: connect: permission denied
-Resolution
+- Resolution
 sudo chmod 777 /var/run/docker.sock
 
-Commands related to Docker
+- Commands related to Docker
 docker build -t demo .
 vim index.html
 docker build -t demo .
